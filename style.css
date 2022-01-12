@@ -1,0 +1,145 @@
+body {
+    width: 100%;
+    height: 100vh;
+
+    color: #F9F9F9;
+
+    background: no-repeat linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
+}
+
+.container {
+    width: calc(100% - 10%);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ########### Header ###########*/
+.container-logo img {
+    width: 100px;
+    height: 48.11px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 41px;
+}
+
+.container-media {
+    display: flex;
+    
+}
+
+.container-media img {
+    padding: 10px;
+}
+
+button, .container-logo img, .container-media img:hover {
+    cursor: pointer;
+}
+
+/* ########### Main ###########*/
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#container-right img {
+    width: 400px;
+    height: 369.84px;
+}
+
+#container-left h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 1.875em;
+    letter-spacing: 0.03em;
+
+    margin-top: 30px;
+}
+
+#container-left h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 109%;
+}
+
+#container-left p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+
+    margin: 20px 0;
+}
+
+button {
+    color: #F9F9F9;
+    width: 225px;
+    height: 45px;
+    margin-right: 20px;
+    transform: skew(-20deg);
+
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+
+    flex-wrap: nowrap;
+}
+
+.button-left {
+    background: #658E76;
+
+}
+
+.button-right {
+    border: 2px solid #658E76;
+    background-color: transparent;
+}
+
+button img {
+    display: inline;
+}
+
+.button-global {
+    width: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%) skew(20deg);
+}
+
+@media (max-width: 1000px) {
+    body {
+        height: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-left {
+        margin-top: -5%;
+        /* margin-bottom: 2%; */
+    }
+
+    .button-left {
+        margin: 10% 0;
+    }
+
+    .button-right {
+        display: none;
+    }
+}
